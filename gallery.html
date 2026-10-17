@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Luck Tattoo Studio, Tampa FL</title>
+<meta name="description" content="Inside Luck Tattoo Studio in Tampa, FL — the studio, the craft, the work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="concept">Design concept</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Luck<b>★</b>Tattoo</a>
+    <nav class="topnav" id="topnav">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="services.html">Services</a>
+      <a class="link active" href="gallery.html">Gallery</a>
+      <a class="link" href="contact.html">Contact</a>
+      <a class="btn small red" href="tel:+18137986271">Book Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="topnav"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="crumb">Gallery</span>
+    <h1>The craft<br>speaks.</h1>
+    <p>The studio, the setup, and the detail that goes into every piece.</p>
+  </div>
+</div>
+
+<section class="gal">
+  <div class="wrap">
+    <figure class="gfig g1">
+      <img src="images/hero.webp" alt="Artist tattooing in the studio">
+      <figcaption><b>01</b> In session — custom work, drawn for the client</figcaption>
+    </figure>
+    <figure class="gfig g2">
+      <img src="images/detail.webp" alt="Black and grey tattoo detail">
+      <figcaption><b>02</b> Black &amp; grey detail</figcaption>
+    </figure>
+    <figure class="gfig g3">
+      <img src="images/station.webp" alt="Sterile workstation setup">
+      <figcaption><b>03</b> The setup — sterile, single-use</figcaption>
+    </figure>
+    <figure class="gfig g4">
+      <img src="images/studio.webp" alt="Studio interior">
+      <figcaption><b>04</b> The studio — walk in, leave marked for life</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="wrap">
+  <p class="gal-note">Illustrative imagery for this design concept — the final gallery features the studio's real work and artists.</p>
+  <div style="padding-bottom:96px"><a class="btn red" href="tel:+18137986271">Start Your Piece</a></div>
+</div>
+
+<footer class="mega">
+  <div class="wrap">
+    <div class="mega-word">Luck<b>★</b>Tattoo</div>
+    <div class="mega-grid">
+      <div>
+        <h4>Book</h4>
+        <a class="big-tel" href="tel:+18137986271">(813) 798-6271</a>
+        <p style="margin-top:12px;color:var(--bone-dim)">Free consultations · Tampa, FL</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <p>Tampa, FL<br><a href="https://www.google.com/maps/search/?api=1&query=Luck+Tattoo+Studio+Tampa+FL" target="_blank" rel="noopener">Open in Google Maps →</a><br><a href="https://bizidex.com/en/luck-tattoo-studio-arts-510036" target="_blank" rel="noopener">Bizidex listing →</a></p>
+      </div>
+    </div>
+    <div class="mega-foot">
+      <span>© 2026 Luck Tattoo Studio</span>
+      <span>Concept website design</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var btn=document.getElementById('navToggle'),nav=document.getElementById('topnav');
+  if(!btn||!nav)return;
+  function set(open){
+    nav.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+    var ic=btn.querySelector('i');
+    if(ic){ic.classList.toggle('bi-list',!open);ic.classList.toggle('bi-x',open);}
+  }
+  btn.addEventListener('click',function(){set(!nav.classList.contains('open'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking — Luck Tattoo Studio, Tampa FL</title>
+<meta name="description" content="Book a free consultation at Luck Tattoo Studio, Tampa, FL. Call (813) 798-6271.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="concept">Design concept</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Luck<b>★</b>Tattoo</a>
+    <nav class="topnav" id="topnav">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="services.html">Services</a>
+      <a class="link" href="gallery.html">Gallery</a>
+      <a class="link active" href="contact.html">Contact</a>
+      <a class="btn small red" href="tel:+18137986271">Book Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="topnav"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<div class="contact-hero">
+  <div class="wrap">
+    <span class="crumb">Contact &amp; Booking</span>
+    <h1>Let's make it<br>permanent.</h1>
+  </div>
+</div>
+
+<a class="giant-tel" href="tel:+18137986271">
+  <small>Call to book your free consultation</small>
+  <span>(813) 798-6271</span>
+</a>
+
+<div class="wrap">
+  <div class="info-grid">
+    <div class="iblock i1">
+      <i class="bi bi-geo-alt"></i>
+      <h3>Find us</h3>
+      <p>Tampa, FL<br><a href="https://www.google.com/maps/search/?api=1&query=Luck+Tattoo+Studio+Tampa+FL" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </div>
+    <div class="iblock i2">
+      <i class="bi bi-clock"></i>
+      <h3>Hours</h3>
+      <p><strong style="color:var(--bone)">Tue – Sat:</strong> 12:00 PM – 8:00 PM<br><strong style="color:var(--bone)">Sun – Mon:</strong> by appointment</p>
+    </div>
+    <div class="iblock i3">
+      <i class="bi bi-chat-dots"></i>
+      <h3>Walk-ins</h3>
+      <p>Small pieces and consultations can often happen same-day — call ahead and we'll make room.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="mega">
+  <div class="wrap">
+    <div class="mega-word">Luck<b>★</b>Tattoo</div>
+    <div class="mega-grid">
+      <div>
+        <h4>Book</h4>
+        <a class="big-tel" href="tel:+18137986271">(813) 798-6271</a>
+        <p style="margin-top:12px;color:var(--bone-dim)">Free consultations · Tampa, FL</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <p>Tampa, FL<br><a href="https://www.google.com/maps/search/?api=1&query=Luck+Tattoo+Studio+Tampa+FL" target="_blank" rel="noopener">Open in Google Maps →</a><br><a href="https://bizidex.com/en/luck-tattoo-studio-arts-510036" target="_blank" rel="noopener">Bizidex listing →</a></p>
+      </div>
+    </div>
+    <div class="mega-foot">
+      <span>© 2026 Luck Tattoo Studio</span>
+      <span>Concept website design</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var btn=document.getElementById('navToggle'),nav=document.getElementById('topnav');
+  if(!btn||!nav)return;
+  function set(open){
+    nav.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+    var ic=btn.querySelector('i');
+    if(ic){ic.classList.toggle('bi-list',!open);ic.classList.toggle('bi-x',open);}
+  }
+  btn.addEventListener('click',function(){set(!nav.classList.contains('open'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+})();
+</script>
+</body>
+</html>
